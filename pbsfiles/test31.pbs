@@ -1,0 +1,3 @@
+#PBS -j oe -o output.stdout -l nodes=4:ppn=8 -q pp
+
+mpiexec -machinefile $PBS_NODEFILE -np 31 /home/s14026002/dales/a2/main 10000000
